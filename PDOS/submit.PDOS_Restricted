@@ -10,8 +10,8 @@
 # NEED 'POP=FULL' IN GAUSSIAN INPUT FOR THIS TO WORK.
 
 #### CHANGE FRAGMENTS AS NEEDED ####
-frag1="1-78"
-frag2="79-128"
+frag1="1,4-10"
+frag2="2,3,11-20"
 
 cp ~/THUNDER_HOME/Multiwfn_3.6_bin_Linux_noGUI/Multiwfn_3.6_bin_Linux_noGUI/settings.ini .
 
