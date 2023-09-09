@@ -1,0 +1,85 @@
+#!/bin/bash
+#PBS -q preemptible
+#PBS -W group_list=x-ccast-prj-kilina
+#PBS -N make_rhos
+#PBS -oe
+#PBS -l select=1:ncpus=20:mem=30GB
+#PBS -l walltime=24:00:00
+#PBS -m abe
+##PBS -M braden.m.weight@ndsu.edu
+
+cd $PBS_O_WORKDIR
+
+export GAUSS_MDEF=10GB
+export GAUSS_MEMDEF=10GB
+
+module load gaussian/16.b.01-LINDA-pgi
+
+rm geometry.fchk
+
+if [ ! -f geometry.fchk ]; then
+	echo "The formatted checkpoint file was not found."
+        formchk geometry.chk
+else
+	echo "The formatted checkpoint file was found. Skipping fchk creation."
+fi
+
+cp ~/Multiwfn_3.5_bin_Linux_noGUI_GIFF/settings.ini .
+
+echo "Generating first transition density for transition state1."
+
+~/Multiwfn_3.5_bin_Linux_noGUI_GIFF/Multiwfn << EOF
+geometry.fchk
+18
+1
+geometry.out
+1
+1
+8
+~/Multiwfn_3.5_bin_Linux_noGUI_GIFF/example_cubes/format.cube
+13
+0
+0
+0
+0
+0
+0
+0
+EOF
+
+mv transdens.cub trans-one.cube
+
+echo "Generating first transition density for transition state 3."
+
+~/Multiwfn_3.5_bin_Linux_noGUI_GIFF/Multiwfn << EOF
+geometry.fchk
+18
+1
+geometry.out
+3
+1
+8
+~/Multiwfn_3.5_bin_Linux_noGUI_GIFF/example_cubes/format.cube
+13
+0
+0
+0
+0
+0
+0
+0
+EOF
+
+mv transdens.cub trans-three.cube
+
+#module load python/3.4.3-gcc
+
+python3 ~/bin/part_ratio_calc.py trans-one.cube
+python3 ~/bin/part_ratio_calc.py trans-three.cube
+
+
+
+
+
+
+

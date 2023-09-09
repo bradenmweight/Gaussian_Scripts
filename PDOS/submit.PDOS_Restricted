@@ -1,0 +1,45 @@
+#!/bin/bash
+#SBATCH -p debug
+#SBATCH -J PDOS
+#SBATCH -o output.slurm
+#SBATCH -t 1:00:00
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=4
+#SBATCH --mem 2GB
+
+# NEED 'POP=FULL' IN GAUSSIAN INPUT FOR THIS TO WORK.
+
+#### CHANGE FRAGMENTS AS NEEDED ####
+frag1="1-78"
+frag2="79-128"
+
+cp ~/THUNDER_HOME/Multiwfn_3.6_bin_Linux_noGUI/Multiwfn_3.6_bin_Linux_noGUI/settings.ini .
+
+~/THUNDER_HOME/Multiwfn_3.6_bin_Linux_noGUI/Multiwfn_3.6_bin_Linux_noGUI/Multiwfn << EOF
+geometry.fchk
+10
+-1
+1
+a ${frag1}
+q
+2
+a ${frag2}
+q
+q
+8
+3
+0.1
+0
+9
+10
+3
+0
+0
+0
+0
+0
+0
+EOF
+
+
+

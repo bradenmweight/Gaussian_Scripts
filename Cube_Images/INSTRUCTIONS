@@ -1,0 +1,11 @@
+# Need these packages:
+Package Directory on Bluehive: /scratch/bweight/software/
+1. jpeg-6b (https://sourceforge.net/projects/libjpeg/)
+2. Tachyon-master (https://github.com/thesketh/Tachyon)
+    a. Need to enable the JPEG package in the configure file
+3. vmd-1.9.4a51 (https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD)
+    a. Need to make sure the tachyon executable is in path ~/lib/vmd/tachyon_LINUXAMD64 (with this name exactly)
+    b. Make sure vmd executable is in ~/bin/
+
+Syntax for use (replace "NAME.cube" with a cube file name and make sure there is only one script that matches *.vmd):
+vmd -dispdev none -e *.vmd -args $(pwd)/NAME.cube

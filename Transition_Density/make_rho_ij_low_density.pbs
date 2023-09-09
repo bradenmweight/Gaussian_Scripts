@@ -1,0 +1,136 @@
+#!/bin/bash
+#PBS -q preemptible
+#PBS -W group_list=x-ccast-prj-kilina
+#PBS -N make_rhos
+#PBS -oe
+#PBS -l select=1:ncpus=6:mem=60GB
+#PBS -l walltime=24:00:00
+#PBS -m abe
+##PBS -M braden.m.weight@ndsu.edu
+
+cd $PBS_O_WORKDIR
+
+cp ~/Multiwfn_3.5_bin_Linux_noGUI_GIFF/settings.ini .
+
+echo "Generating first transition density for transition states."
+
+~/Multiwfn_3.5_bin_Linux_noGUI_GIFF/Multiwfn << EOF
+geometry.fchk
+18
+1
+geometry.out
+1
+1
+1
+13
+0
+0
+0
+0
+0
+0
+0
+EOF
+
+mv transdens.cub trans-1.cube
+
+echo "Generating first transition density for transition state 3."
+
+~/Multiwfn_3.5_bin_Linux_noGUI_GIFF/Multiwfn << EOF
+geometry.fchk
+18
+1
+geometry.out
+2
+1
+1
+13
+0
+0
+0
+0
+0
+0
+0
+EOF
+
+mv transdens.cub trans-2.cube
+
+~/Multiwfn_3.5_bin_Linux_noGUI_GIFF/Multiwfn << EOF
+geometry.fchk
+18
+1
+geometry.out
+3
+1
+1
+13
+0
+0
+0
+0
+0
+0
+0
+EOF
+
+mv transdens.cub trans-3.cube
+
+~/Multiwfn_3.5_bin_Linux_noGUI_GIFF/Multiwfn << EOF
+geometry.fchk
+18
+1
+geometry.out
+4
+1
+1
+13
+0
+0
+0
+0
+0
+0
+0
+EOF
+
+mv transdens.cub trans-4.cube
+
+~/Multiwfn_3.5_bin_Linux_noGUI_GIFF/Multiwfn << EOF
+geometry.fchk
+18
+1
+geometry.out
+5
+1
+1
+13
+0
+0
+0
+0
+0
+0
+0
+EOF
+
+mv transdens.cub trans-5.cube
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
