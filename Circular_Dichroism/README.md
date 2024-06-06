@@ -3,7 +3,7 @@
 
 ## Theory
 ```
-$\hat{\mu}^\mathrm{el} = -\sum_{i}^{N_\mathrm{el}} \hat{\bf r} + \sum_{I}^{N_\mathrm{ions}} \hat{\bf R}$
+$$\hat{\mu}^\mathrm{el} = -\sum_{i}^{N_\mathrm{el}} \hat{\bf r} + \sum_{I}^{N_\mathrm{ions}} \hat{\bf R}$$
 ```
 
 
