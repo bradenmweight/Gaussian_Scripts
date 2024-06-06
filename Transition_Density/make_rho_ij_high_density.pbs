@@ -1,0 +1,54 @@
+#!/bin/bash
+#PBS -q default
+#PBS -W group_list=x-ccast-prj-kilina
+#PBS -N make_rhos
+#PBS -oe
+#PBS -l select=1:ncpus=4:mem=8GB
+#PBS -l walltime=24:00:00
+#PBS -m abe
+##PBS -M braden.m.weight@ndsu.edu
+
+cd $PBS_O_WORKDIR
+
+cp ~/Multiwfn_3.5_bin_Linux_noGUI_GIFF/settings.ini .
+
+for state in {1..15}; do
+
+~/Multiwfn_3.5_bin_Linux_noGUI_GIFF/Multiwfn << EOF
+geometry.fchk
+18
+1
+geometry.out
+${state}
+1
+3
+13
+0
+0
+0
+0
+0
+0
+0
+EOF
+
+mv transdens.cub trans-${n}.cube
+
+done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+#!/bin/bash
+#SBATCH -p debug
+#SBATCH -J Spin_Orbitals
+#SBATCH -o output.slurm
+#SBATCH -t 1:00:00
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=2
+#SBATCH --mem 5GB
+
+cp ~/Multiwfn_3.5_bin_Linux_noGUI_GIFF/settings.ini .
+
+echo "Generating Natural Spin Orbitals"
+~/THUNDER_HOME/Multiwfn_3.6_bin_Linux_noGUI/Multiwfn_3.6_bin_Linux_noGUI/Multiwfn << EOF
+./geometry.fchk
+200
+16
+SCF
+3
+y
+0
+5
+4
+1
+2
+2
+EOF
+
+mv MOvalue.cub Triplet_NSO_1.cube
+
+~/THUNDER_HOME/Multiwfn_3.6_bin_Linux_noGUI/Multiwfn_3.6_bin_Linux_noGUI/Multiwfn << EOF
+new.molden
+5
+4
+2
+2
+2
+EOF
+
+mv MOvalue.cub Triplet_NSO_2.cube
+
+echo "Remember: SNO go from 1 to N Orbitals."
+echo "For unrestricted singlet structure, SNO=1 (and SNO=2) have popiulation=1."
+echo "Here, there are N = ${N} orbitals and therefore ${N} SNOs."
+
+
+
+

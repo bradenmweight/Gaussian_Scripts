@@ -1,0 +1,17 @@
+#!/bin/bash
+#SBATCH -p standard
+#SBATCH -J CUBE
+#SBATCH -o output.slurm
+#SBATCH -t 5-00:00:00
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=36
+#SBATCH --mem 100GB
+
+module load gaussian
+
+export GAUSS_MDEF=100GB
+export GAUSS_MEMDEF=100GB
+
+cubegen 36 MO=HOMO geometry.fchk HOMO.cube -2 h
+cubegen 36 MO=LUMO geometry.fchk LUMO.cube -2 h
+

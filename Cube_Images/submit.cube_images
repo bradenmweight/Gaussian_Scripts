@@ -1,0 +1,17 @@
+#!/bin/bash
+#SBATCH -p action
+#SBATCH -J CUBE_IMAGES
+#SBATCH -o output.slurm
+#SBATCH -t 1-00:00:00
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem 1GB
+
+mydir=$(pwd)
+
+for d in $(find . -type d -name "TDMat"); do 
+    cd $d/; 
+        echo "$d" >> $mydir/cube_images.out
+        ~/Gaussain_scripts/Cube_Images/run_cubes_vmd_cubes.sh >> $mydir/cube_images.out; 
+        cd ../../;
+done
