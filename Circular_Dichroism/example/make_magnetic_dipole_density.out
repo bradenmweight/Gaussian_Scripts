@@ -1,0 +1,1313 @@
+!!!!   I found 1 excited state(s) in geometry.out.
+Generating magnetic dipole density for transition state 1.
+ Warning: "settings.ini" was found neither in current folder nor in the path defined by "Multiwfnpath" environment variable. Now using default settings instead
+ 
+ Multiwfn -- A Multifunctional Wavefunction Analyzer
+ Version 3.7, release date: 2020-Aug-14
+ Project leader: Tian Lu (Beijing Kein Research Center for Natural Sciences)
+ Below paper ***MUST BE CITED*** if Multiwfn is utilized in your work:
+          Tian Lu, Feiwu Chen, J. Comput. Chem., 33, 580-592 (2012)
+ See "How to cite Multiwfn.pdf" in Multiwfn binary package for more information
+ Multiwfn official website: http://sobereva.com/multiwfn
+ Multiwfn English forum: http://sobereva.com/wfnbbs
+ Multiwfn Chinese forum: http://bbs.keinsci.com/wfn
+
+ ( The number of threads:   4   Current date: 2024-12-07   Time: 16:57:12 )
+
+ Warning: You should set "KMP_STACKSIZE" environment variable as mentioned in Section 2.1.2 of Multiwfn manual!
+ 
+ Input file path, for example E:\Gokukoku\Kazumi_Schlierenzauer.wfn
+ (Supported: .mwfn/wfn/wfx/fch/molden/31/chg/pdb/xyz/mol/mol2/cub/grd, etc.)
+ Hint: Press ENTER button directly can select file in a GUI window. To reload the file last time used, simply input the letter "o". Input such as ?miku.fch can open the miku.fch in the same folder as the file last time used.
+ Please wait...
+ Loading various information of the wavefunction
+ The highest angular moment basis functions is P
+ Loading basis set definition...
+ Loading orbitals...
+ Converting basis function information to GTF information...
+ Generating density matrix based on SCF orbitals...
+ Generating overlap matrix...
+ 
+ Total/Alpha/Beta electrons:     74.0000     37.0000     37.0000
+ Net charge:     0.00000      Expected multiplicity:    1
+ Atoms:     15,  Basis functions:     55,  GTFs:    165
+ Total energy:    -820.370369356610 Hartree,   Virial ratio:  2.01833469
+ This is a restricted single-determinant wavefunction
+ Orbitals from 1 to    37 are occupied
+ Title line of this file: TitleMe
+
+ Loaded geometry.fchk successfully!
+ Formula: H6 C7 F1 Cl1 
+ Molecule weight:       144.57414
+ Point group: C1 
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point
+ 2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and atomic charges
+ 8 Orbital composition analysis
+ 9 Bond order analysis
+ 10 Plot total DOS, partial DOS, OPDOS, local DOS and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                    18 Electron excitation analysis
+ 19 Orbital localization analysis     20 Visual study of weak interaction
+ 21 Energy decomposition analysis
+ 100 Other functions (Part 1)         200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ 
+           ============ Electronic excitation analyses ============ 
+ -1 Check, modify and export configuration coefficients of an excitation
+ 0 Return
+ 1 Analyze and visualize hole-electron distribution, transition density, and transition electric/magnetic dipole moment density
+ 2 Plot atom/fragment transition matrix of various kinds as heat map
+ 3 Analyze charge-transfer based on density difference grid data (JCTC,7,2498)
+ 4 Calculate delta_r index to measure charge-transfer length (JCTC,9,3118)
+ 5 Calculate transition electric dipole moments between all states and electric dipole moment of each state
+ 6 Generate natural transition orbitals (NTOs)
+ 7 Calculate ghost-hunter index (JCC,38,2151)
+ 8 Calculate interfragment charge transfer amount via IFCT method
+ 9 Generate and export transition density matrix
+ 10 Decompose transition dipole moment as molecular orbital pair contributions
+ 11 Decompose transition dipole moment as basis function and atom contributions
+ 12 Calculate Mulliken atomic transition charges
+ 13 Generate natural orbitals of specific excited states
+ 14 Calculate lambda index to characterize electron excitation (JCP,128,044118)
+ 15 Print major MO transitions in all excited states
+ Please input path of Gaussian/ORCA output file or plain text file, electron excitation information will be loaded from this file
+ e.g. C:\lovelive\sunshine\yosoro.out
+ Hint: If pressing ENTER button directly, the file with identical name as input file but with .out or .log suffix will be loaded
+ This file is recognized as a Gaussian output file
+ 
+ Information of the only excited state:
+ Excitation Energy:   6.329 eV   Multiplicity: 1    MO pairs:     813
+ 
+ The only excited state will be studied
+ Loading configuration coefficients of excited state   1...
+ The sum of square of excitation coefficients:  0.500290
+ The negative of the sum of square of de-excitation coefficients: -0.000289
+ The sum of above two values  0.500000
+ Deviation to expected normalization value (0.5) is  0.0000
+ 
+ Please cite hole-electron analysis:
+ Carbon, 165, 461-467 (2020) DOI: 10.1016/j.carbon.2020.05.023
+ 
+    ------------- Hole-electron and transition density analysis -----------
+ -1 Toggle calculating transit. magnetic dip. density in option 1, current: No
+ 0 Return
+ 1 Visualize and analyze hole, electron, transition density and so on
+ 2 Show molecular orbital contribution to hole and electron distribution
+ 3 Show atom or fragment contribution to hole and electron and plot the contributions as heat map
+ 4 Show basis function contribution to hole and electron
+ 
+    ------------- Hole-electron and transition density analysis -----------
+ -1 Toggle calculating transit. magnetic dip. density in option 1, current: Yes
+ 0 Return
+ 1 Visualize and analyze hole, electron, transition density and so on
+ 2 Show molecular orbital contribution to hole and electron distribution
+ 3 Show atom or fragment contribution to hole and electron and plot the contributions as heat map
+ 4 Show basis function contribution to hole and electron
+ 
+ Please select a method to set up grid
+ -10 Set extension distance of grid range for mode 1~4, current:  6.000 Bohr
+ 1 Low quality grid   , covering whole system, about 125000 points in total
+ 2 Medium quality grid, covering whole system, about 512000 points in total
+ 3 High quality grid  , covering whole system, about 1728000 points in total
+ 4 Input the number of points or grid spacing in X,Y,Z, covering whole system
+ 5 Input original point, translation vector and the number of points
+ 6 Input center coordinate, number of points and extension distance
+ 7 The same as 6, but input two atoms, the midpoint will be defined as center
+ 8 Use grid setting of another cube file
+ 10 Set box of grid data visually using a GUI window
+ Coordinate of origin in X,Y,Z is      -8.023875  -10.022729   -7.909541 Bohr
+ Coordinate of end point in X,Y,Z is   15.229454   10.081711    7.592678 Bohr
+ Grid spacing in X,Y,Z is    0.242222    0.242222    0.242222 Bohr
+ The number of points in X,Y,Z is   97   84   65   Total:      529620
+ Note: During the calculation of cross term of electron, the orbital pairs whose absolute value of coefficient <0.01 will be ignored to save time
+ Calculating grid data...
+ Progress: [--------------------------------------------------]    1.54 %     - Progress: [#-------------------------------------------------]    3.08 %     \ Progress: [##------------------------------------------------]    4.62 %     | Progress: [###-----------------------------------------------]    6.15 %     / Progress: [###-----------------------------------------------]    7.69 %     - Progress: [####----------------------------------------------]    9.23 %     \ Progress: [#####---------------------------------------------]   10.77 %     | Progress: [######--------------------------------------------]   12.31 %     / Progress: [######--------------------------------------------]   13.85 %     - Progress: [#######-------------------------------------------]   15.38 %     \ Progress: [########------------------------------------------]   16.92 %     | Progress: [#########-----------------------------------------]   18.46 %     / Progress: [##########----------------------------------------]   20.00 %     - Progress: [##########----------------------------------------]   21.54 %     \ Progress: [###########---------------------------------------]   23.08 %     | Progress: [############--------------------------------------]   24.62 %     / Progress: [#############-------------------------------------]   26.15 %     - Progress: [#############-------------------------------------]   27.69 %     \ Progress: [##############------------------------------------]   29.23 %     | Progress: [###############-----------------------------------]   30.77 %     / Progress: [################----------------------------------]   32.31 %     - Progress: [################----------------------------------]   33.85 %     \ Progress: [#################---------------------------------]   35.38 %     | Progress: [##################--------------------------------]   36.92 %     / Progress: [###################-------------------------------]   38.46 %     - Progress: [####################------------------------------]   40.00 %     \ Progress: [####################------------------------------]   41.54 %     | Progress: [#####################-----------------------------]   43.08 %     / Progress: [######################----------------------------]   44.62 %     - Progress: [#######################---------------------------]   46.15 %     \ Progress: [#######################---------------------------]   47.69 %     | Progress: [########################--------------------------]   49.23 %     / Progress: [#########################-------------------------]   50.77 %     - Progress: [##########################------------------------]   52.31 %     \ Progress: [##########################------------------------]   53.85 %     | Progress: [###########################-----------------------]   55.38 %     / Progress: [############################----------------------]   56.92 %     - Progress: [#############################---------------------]   58.46 %     \ Progress: [##############################--------------------]   60.00 %     | Progress: [##############################--------------------]   61.54 %     / Progress: [###############################-------------------]   63.08 %     - Progress: [################################------------------]   64.62 %     \ Progress: [#################################-----------------]   66.15 %     | Progress: [#################################-----------------]   67.69 %     / Progress: [##################################----------------]   69.23 %     - Progress: [###################################---------------]   70.77 %     \ Progress: [####################################--------------]   72.31 %     | Progress: [####################################--------------]   73.85 %     / Progress: [#####################################-------------]   75.38 %     - Progress: [######################################------------]   76.92 %     \ Progress: [#######################################-----------]   78.46 %     | Progress: [########################################----------]   80.00 %     / Progress: [########################################----------]   81.54 %     - Progress: [#########################################---------]   83.08 %     \ Progress: [##########################################--------]   84.62 %     | Progress: [###########################################-------]   86.15 %     / Progress: [###########################################-------]   87.69 %     - Progress: [############################################------]   89.23 %     \ Progress: [#############################################-----]   90.77 %     | Progress: [##############################################----]   92.31 %     / Progress: [##############################################----]   93.85 %     - Progress: [###############################################---]   95.38 %     \ Progress: [################################################--]   96.92 %     | Progress: [#################################################-]   98.46 %     / Progress: [##################################################]  100.00 %     - 
+ Calculation took up wall clock time        25 s
+
+ Integral of hole:        1.000038
+ Integral of electron:    1.000053
+ Integral of transition density:   -0.000005
+ Transition dipole moment in X/Y/Z:   0.009241   0.057289   0.000654 a.u.
+ Transition magnetic dipole moment in X/Y/Z:  0.015242  0.009559 -0.028627 a.u.
+ Sm index (integral of Sm function):   0.85200 a.u.
+ Sr index (integral of Sr function):   0.97785 a.u.
+ Centroid of hole in X/Y/Z:        1.514850    0.013127    0.012052 Angstrom
+ Centroid of electron in X/Y/Z:    1.535305    0.022958    0.006901 Angstrom
+ D_x:   0.020  D_y:   0.010  D_z:   0.005    D index:   0.023 Angstrom
+ Variation of dipole moment with respect to ground state:
+ X:   -0.038656  Y:   -0.018578  Z:    0.009735    Norm:    0.043979 a.u.
+ RMSD of hole in X/Y/Z:       1.169   1.076   0.674   Norm:   1.726 Angstrom
+ RMSD of electron in X/Y/Z:   1.208   1.080   0.622   Norm:   1.735 Angstrom
+ Difference between RMSD of hole and electron (delta sigma):
+ X:  0.039  Y:  0.003  Z: -0.052    Overall:  0.009 Angstrom
+ H_x:  1.188  H_y:  1.078  H_z:  0.648  H_CT:  1.149  H index:  1.731 Angstrom
+ t index: -1.125 Angstrom
+ Hole delocalization index (HDI):       9.25
+ Electron delocalization index (EDI):  10.90
+ Ghost-hunter index (def 1):   -615.154 eV, 1st/2nd terms:  3.603    618.757 eV
+ Ghost-hunter index (def 2):   -615.234 eV, 1st/2nd terms:  3.524    618.757 eV
+ Excitation energy of this state:     6.329 eV
+ 
+              -------------- Post-processing menu --------------
+ -1 Toggle if adding state index at end of exported cube filename, current: No
+ 0 Return
+ 1 Show isosurface of hole distribution
+ 2 Show isosurface of electron distribution
+ 3 Show isosurface of hole and electron distribution simultaneously
+ 4 Show isosurface of overlap of hole-electron (i.e. Sm or Sr function)
+ 5 Show isosurface of transition density
+ 6 Show isosurface of transition dipole moment density
+ 7 Show isosurface of charge density difference
+ 8 Show isosurface of Cele and Chole functions simultaneously
+ 9 Show isosurface of transition magnetic dipole moment density
+ 10 Output cube file of hole distribution to current folder
+ 11 Output cube file of electron distribution to current folder
+ 12 Output cube file of overlap of hole-electron to current folder
+ 13 Output cube file of transition density to current folder
+ 14 Output cube file of transition dipole moment density to current folder
+ 15 Output cube file of charge density difference to current folder
+ 16 Output cube file of Cele and Chole functions to current folder
+ 17 Output cube file of transition magnetic dipole moment density
+ 18 Calculate hole-electron Coulomb attractive energy (exciton binding energy)
+ Select the component of transition magnetic dipole moment density
+ 1: X component  2: Y component  3: Z component
+ Outputting to magtrdipdens.cub in current folder
+ Done!
+ 
+              -------------- Post-processing menu --------------
+ -1 Toggle if adding state index at end of exported cube filename, current: No
+ 0 Return
+ 1 Show isosurface of hole distribution
+ 2 Show isosurface of electron distribution
+ 3 Show isosurface of hole and electron distribution simultaneously
+ 4 Show isosurface of overlap of hole-electron (i.e. Sm or Sr function)
+ 5 Show isosurface of transition density
+ 6 Show isosurface of transition dipole moment density
+ 7 Show isosurface of charge density difference
+ 8 Show isosurface of Cele and Chole functions simultaneously
+ 9 Show isosurface of transition magnetic dipole moment density
+ 10 Output cube file of hole distribution to current folder
+ 11 Output cube file of electron distribution to current folder
+ 12 Output cube file of overlap of hole-electron to current folder
+ 13 Output cube file of transition density to current folder
+ 14 Output cube file of transition dipole moment density to current folder
+ 15 Output cube file of charge density difference to current folder
+ 16 Output cube file of Cele and Chole functions to current folder
+ 17 Output cube file of transition magnetic dipole moment density
+ 18 Calculate hole-electron Coulomb attractive energy (exciton binding energy)
+ 
+    ------------- Hole-electron and transition density analysis -----------
+ -1 Toggle calculating transit. magnetic dip. density in option 1, current: Yes
+ 0 Return
+ 1 Visualize and analyze hole, electron, transition density and so on
+ 2 Show molecular orbital contribution to hole and electron distribution
+ 3 Show atom or fragment contribution to hole and electron and plot the contributions as heat map
+ 4 Show basis function contribution to hole and electron
+ 
+           ============ Electronic excitation analyses ============ 
+ -1 Check, modify and export configuration coefficients of an excitation
+ 0 Return
+ 1 Analyze and visualize hole-electron distribution, transition density, and transition electric/magnetic dipole moment density
+ 2 Plot atom/fragment transition matrix of various kinds as heat map
+ 3 Analyze charge-transfer based on density difference grid data (JCTC,7,2498)
+ 4 Calculate delta_r index to measure charge-transfer length (JCTC,9,3118)
+ 5 Calculate transition electric dipole moments between all states and electric dipole moment of each state
+ 6 Generate natural transition orbitals (NTOs)
+ 7 Calculate ghost-hunter index (JCC,38,2151)
+ 8 Calculate interfragment charge transfer amount via IFCT method
+ 9 Generate and export transition density matrix
+ 10 Decompose transition dipole moment as molecular orbital pair contributions
+ 11 Decompose transition dipole moment as basis function and atom contributions
+ 12 Calculate Mulliken atomic transition charges
+ 13 Generate natural orbitals of specific excited states
+ 14 Calculate lambda index to characterize electron excitation (JCP,128,044118)
+ 15 Print major MO transitions in all excited states
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point
+ 2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and atomic charges
+ 8 Orbital composition analysis
+ 9 Bond order analysis
+ 10 Plot total DOS, partial DOS, OPDOS, local DOS and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                    18 Electron excitation analysis
+ 19 Orbital localization analysis     20 Visual study of weak interaction
+ 21 Energy decomposition analysis
+ 100 Other functions (Part 1)         200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ Nucleus list:
+    1(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.371937  -2.222740  -0.005385
+    2(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008407  -2.222740  -0.005385
+    3(C ) --> Charge:  6.000000  x,y,z(Bohr):   5.326563   0.059578  -0.005385
+    4(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008188   2.343329  -0.007651
+    5(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.372351   2.343182  -0.008556
+    6(C ) --> Charge:  6.000000  x,y,z(Bohr):   0.054076   0.060003  -0.006674
+    7(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.333043  -4.022359  -0.004535
+    8(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.046827  -4.022729  -0.002900
+    9(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.047915   4.142619  -0.007762
+   10(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.332771   4.142732  -0.010357
+   11(H ) --> Charge:  1.000000  x,y,z(Bohr):  -2.023875   0.060349  -0.007014
+   12(C ) --> Charge:  6.000000  x,y,z(Bohr):   8.236741   0.059790  -0.003707
+   13(H ) --> Charge:  1.000000  x,y,z(Bohr):   8.911839   0.083252  -1.909541
+   14(F ) --> Charge:  9.000000  x,y,z(Bohr):   9.086258   2.127914   1.224890
+   15(Cl) --> Charge: 17.000000  x,y,z(Bohr):   9.344695  -2.674781   1.531314
+ Note: Orbital    37 is HOMO, energy:   -0.204241 a.u.   -5.557678 eV
+       Orbital    38 is LUMO, energy:    0.072714 a.u.    1.978652 eV
+       HOMO-LUMO gap:    0.276955 a.u.    7.536330 eV    727.145480 kJ/mol
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point
+ 2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and atomic charges
+ 8 Orbital composition analysis
+ 9 Bond order analysis
+ 10 Plot total DOS, partial DOS, OPDOS, local DOS and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                    18 Electron excitation analysis
+ 19 Orbital localization analysis     20 Visual study of weak interaction
+ 21 Energy decomposition analysis
+ 100 Other functions (Part 1)         200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ Nucleus list:
+    1(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.371937  -2.222740  -0.005385
+    2(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008407  -2.222740  -0.005385
+    3(C ) --> Charge:  6.000000  x,y,z(Bohr):   5.326563   0.059578  -0.005385
+    4(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008188   2.343329  -0.007651
+    5(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.372351   2.343182  -0.008556
+    6(C ) --> Charge:  6.000000  x,y,z(Bohr):   0.054076   0.060003  -0.006674
+    7(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.333043  -4.022359  -0.004535
+    8(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.046827  -4.022729  -0.002900
+    9(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.047915   4.142619  -0.007762
+   10(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.332771   4.142732  -0.010357
+   11(H ) --> Charge:  1.000000  x,y,z(Bohr):  -2.023875   0.060349  -0.007014
+   12(C ) --> Charge:  6.000000  x,y,z(Bohr):   8.236741   0.059790  -0.003707
+   13(H ) --> Charge:  1.000000  x,y,z(Bohr):   8.911839   0.083252  -1.909541
+   14(F ) --> Charge:  9.000000  x,y,z(Bohr):   9.086258   2.127914   1.224890
+   15(Cl) --> Charge: 17.000000  x,y,z(Bohr):   9.344695  -2.674781   1.531314
+ Note: Orbital    37 is HOMO, energy:   -0.204241 a.u.   -5.557678 eV
+       Orbital    38 is LUMO, energy:    0.072714 a.u.    1.978652 eV
+       HOMO-LUMO gap:    0.276955 a.u.    7.536330 eV    727.145480 kJ/mol
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point
+ 2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and atomic charges
+ 8 Orbital composition analysis
+ 9 Bond order analysis
+ 10 Plot total DOS, partial DOS, OPDOS, local DOS and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                    18 Electron excitation analysis
+ 19 Orbital localization analysis     20 Visual study of weak interaction
+ 21 Energy decomposition analysis
+ 100 Other functions (Part 1)         200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ Nucleus list:
+    1(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.371937  -2.222740  -0.005385
+    2(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008407  -2.222740  -0.005385
+    3(C ) --> Charge:  6.000000  x,y,z(Bohr):   5.326563   0.059578  -0.005385
+    4(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008188   2.343329  -0.007651
+    5(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.372351   2.343182  -0.008556
+    6(C ) --> Charge:  6.000000  x,y,z(Bohr):   0.054076   0.060003  -0.006674
+    7(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.333043  -4.022359  -0.004535
+    8(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.046827  -4.022729  -0.002900
+    9(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.047915   4.142619  -0.007762
+   10(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.332771   4.142732  -0.010357
+   11(H ) --> Charge:  1.000000  x,y,z(Bohr):  -2.023875   0.060349  -0.007014
+   12(C ) --> Charge:  6.000000  x,y,z(Bohr):   8.236741   0.059790  -0.003707
+   13(H ) --> Charge:  1.000000  x,y,z(Bohr):   8.911839   0.083252  -1.909541
+   14(F ) --> Charge:  9.000000  x,y,z(Bohr):   9.086258   2.127914   1.224890
+   15(Cl) --> Charge: 17.000000  x,y,z(Bohr):   9.344695  -2.674781   1.531314
+ Note: Orbital    37 is HOMO, energy:   -0.204241 a.u.   -5.557678 eV
+       Orbital    38 is LUMO, energy:    0.072714 a.u.    1.978652 eV
+       HOMO-LUMO gap:    0.276955 a.u.    7.536330 eV    727.145480 kJ/mol
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point
+ 2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and atomic charges
+ 8 Orbital composition analysis
+ 9 Bond order analysis
+ 10 Plot total DOS, partial DOS, OPDOS, local DOS and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                    18 Electron excitation analysis
+ 19 Orbital localization analysis     20 Visual study of weak interaction
+ 21 Energy decomposition analysis
+ 100 Other functions (Part 1)         200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ Nucleus list:
+    1(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.371937  -2.222740  -0.005385
+    2(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008407  -2.222740  -0.005385
+    3(C ) --> Charge:  6.000000  x,y,z(Bohr):   5.326563   0.059578  -0.005385
+    4(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008188   2.343329  -0.007651
+    5(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.372351   2.343182  -0.008556
+    6(C ) --> Charge:  6.000000  x,y,z(Bohr):   0.054076   0.060003  -0.006674
+    7(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.333043  -4.022359  -0.004535
+    8(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.046827  -4.022729  -0.002900
+    9(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.047915   4.142619  -0.007762
+   10(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.332771   4.142732  -0.010357
+   11(H ) --> Charge:  1.000000  x,y,z(Bohr):  -2.023875   0.060349  -0.007014
+   12(C ) --> Charge:  6.000000  x,y,z(Bohr):   8.236741   0.059790  -0.003707
+   13(H ) --> Charge:  1.000000  x,y,z(Bohr):   8.911839   0.083252  -1.909541
+   14(F ) --> Charge:  9.000000  x,y,z(Bohr):   9.086258   2.127914   1.224890
+   15(Cl) --> Charge: 17.000000  x,y,z(Bohr):   9.344695  -2.674781   1.531314
+ Note: Orbital    37 is HOMO, energy:   -0.204241 a.u.   -5.557678 eV
+       Orbital    38 is LUMO, energy:    0.072714 a.u.    1.978652 eV
+       HOMO-LUMO gap:    0.276955 a.u.    7.536330 eV    727.145480 kJ/mol
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point
+ 2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and atomic charges
+ 8 Orbital composition analysis
+ 9 Bond order analysis
+ 10 Plot total DOS, partial DOS, OPDOS, local DOS and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                    18 Electron excitation analysis
+ 19 Orbital localization analysis     20 Visual study of weak interaction
+ 21 Energy decomposition analysis
+ 100 Other functions (Part 1)         200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ Warning: "settings.ini" was found neither in current folder nor in the path defined by "Multiwfnpath" environment variable. Now using default settings instead
+ 
+ Multiwfn -- A Multifunctional Wavefunction Analyzer
+ Version 3.7, release date: 2020-Aug-14
+ Project leader: Tian Lu (Beijing Kein Research Center for Natural Sciences)
+ Below paper ***MUST BE CITED*** if Multiwfn is utilized in your work:
+          Tian Lu, Feiwu Chen, J. Comput. Chem., 33, 580-592 (2012)
+ See "How to cite Multiwfn.pdf" in Multiwfn binary package for more information
+ Multiwfn official website: http://sobereva.com/multiwfn
+ Multiwfn English forum: http://sobereva.com/wfnbbs
+ Multiwfn Chinese forum: http://bbs.keinsci.com/wfn
+
+ ( The number of threads:   4   Current date: 2024-12-07   Time: 16:57:38 )
+
+ Warning: You should set "KMP_STACKSIZE" environment variable as mentioned in Section 2.1.2 of Multiwfn manual!
+ 
+ Input file path, for example E:\Blood-C\Saya_Kisaragi.wfn
+ (Supported: .mwfn/wfn/wfx/fch/molden/31/chg/pdb/xyz/mol/mol2/cub/grd, etc.)
+ Hint: Press ENTER button directly can select file in a GUI window. To reload the file last time used, simply input the letter "o". Input such as ?miku.fch can open the miku.fch in the same folder as the file last time used.
+ Please wait...
+ Loading various information of the wavefunction
+ The highest angular moment basis functions is P
+ Loading basis set definition...
+ Loading orbitals...
+ Converting basis function information to GTF information...
+ Generating density matrix based on SCF orbitals...
+ Generating overlap matrix...
+ 
+ Total/Alpha/Beta electrons:     74.0000     37.0000     37.0000
+ Net charge:     0.00000      Expected multiplicity:    1
+ Atoms:     15,  Basis functions:     55,  GTFs:    165
+ Total energy:    -820.370369356610 Hartree,   Virial ratio:  2.01833469
+ This is a restricted single-determinant wavefunction
+ Orbitals from 1 to    37 are occupied
+ Title line of this file: TitleMe
+
+ Loaded geometry.fchk successfully!
+ Formula: H6 C7 F1 Cl1 
+ Molecule weight:       144.57414
+ Point group: C1 
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point
+ 2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and atomic charges
+ 8 Orbital composition analysis
+ 9 Bond order analysis
+ 10 Plot total DOS, partial DOS, OPDOS, local DOS and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                    18 Electron excitation analysis
+ 19 Orbital localization analysis     20 Visual study of weak interaction
+ 21 Energy decomposition analysis
+ 100 Other functions (Part 1)         200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ 
+           ============ Electronic excitation analyses ============ 
+ -1 Check, modify and export configuration coefficients of an excitation
+ 0 Return
+ 1 Analyze and visualize hole-electron distribution, transition density, and transition electric/magnetic dipole moment density
+ 2 Plot atom/fragment transition matrix of various kinds as heat map
+ 3 Analyze charge-transfer based on density difference grid data (JCTC,7,2498)
+ 4 Calculate delta_r index to measure charge-transfer length (JCTC,9,3118)
+ 5 Calculate transition electric dipole moments between all states and electric dipole moment of each state
+ 6 Generate natural transition orbitals (NTOs)
+ 7 Calculate ghost-hunter index (JCC,38,2151)
+ 8 Calculate interfragment charge transfer amount via IFCT method
+ 9 Generate and export transition density matrix
+ 10 Decompose transition dipole moment as molecular orbital pair contributions
+ 11 Decompose transition dipole moment as basis function and atom contributions
+ 12 Calculate Mulliken atomic transition charges
+ 13 Generate natural orbitals of specific excited states
+ 14 Calculate lambda index to characterize electron excitation (JCP,128,044118)
+ 15 Print major MO transitions in all excited states
+ Please input path of Gaussian/ORCA output file or plain text file, electron excitation information will be loaded from this file
+ e.g. C:\lovelive\sunshine\yosoro.out
+ Hint: If pressing ENTER button directly, the file with identical name as input file but with .out or .log suffix will be loaded
+ This file is recognized as a Gaussian output file
+ 
+ Information of the only excited state:
+ Excitation Energy:   6.329 eV   Multiplicity: 1    MO pairs:     813
+ 
+ The only excited state will be studied
+ Loading configuration coefficients of excited state   1...
+ The sum of square of excitation coefficients:  0.500290
+ The negative of the sum of square of de-excitation coefficients: -0.000289
+ The sum of above two values  0.500000
+ Deviation to expected normalization value (0.5) is  0.0000
+ 
+ Please cite hole-electron analysis:
+ Carbon, 165, 461-467 (2020) DOI: 10.1016/j.carbon.2020.05.023
+ 
+    ------------- Hole-electron and transition density analysis -----------
+ -1 Toggle calculating transit. magnetic dip. density in option 1, current: No
+ 0 Return
+ 1 Visualize and analyze hole, electron, transition density and so on
+ 2 Show molecular orbital contribution to hole and electron distribution
+ 3 Show atom or fragment contribution to hole and electron and plot the contributions as heat map
+ 4 Show basis function contribution to hole and electron
+ 
+    ------------- Hole-electron and transition density analysis -----------
+ -1 Toggle calculating transit. magnetic dip. density in option 1, current: Yes
+ 0 Return
+ 1 Visualize and analyze hole, electron, transition density and so on
+ 2 Show molecular orbital contribution to hole and electron distribution
+ 3 Show atom or fragment contribution to hole and electron and plot the contributions as heat map
+ 4 Show basis function contribution to hole and electron
+ 
+ Please select a method to set up grid
+ -10 Set extension distance of grid range for mode 1~4, current:  6.000 Bohr
+ 1 Low quality grid   , covering whole system, about 125000 points in total
+ 2 Medium quality grid, covering whole system, about 512000 points in total
+ 3 High quality grid  , covering whole system, about 1728000 points in total
+ 4 Input the number of points or grid spacing in X,Y,Z, covering whole system
+ 5 Input original point, translation vector and the number of points
+ 6 Input center coordinate, number of points and extension distance
+ 7 The same as 6, but input two atoms, the midpoint will be defined as center
+ 8 Use grid setting of another cube file
+ 10 Set box of grid data visually using a GUI window
+ Coordinate of origin in X,Y,Z is      -8.023875  -10.022729   -7.909541 Bohr
+ Coordinate of end point in X,Y,Z is   15.229454   10.081711    7.592678 Bohr
+ Grid spacing in X,Y,Z is    0.242222    0.242222    0.242222 Bohr
+ The number of points in X,Y,Z is   97   84   65   Total:      529620
+ Note: During the calculation of cross term of electron, the orbital pairs whose absolute value of coefficient <0.01 will be ignored to save time
+ Calculating grid data...
+ Progress: [--------------------------------------------------]    1.54 %     - Progress: [#-------------------------------------------------]    3.08 %     \ Progress: [##------------------------------------------------]    4.62 %     | Progress: [###-----------------------------------------------]    6.15 %     / Progress: [###-----------------------------------------------]    7.69 %     - Progress: [####----------------------------------------------]    9.23 %     \ Progress: [#####---------------------------------------------]   10.77 %     | Progress: [######--------------------------------------------]   12.31 %     / Progress: [######--------------------------------------------]   13.85 %     - Progress: [#######-------------------------------------------]   15.38 %     \ Progress: [########------------------------------------------]   16.92 %     | Progress: [#########-----------------------------------------]   18.46 %     / Progress: [##########----------------------------------------]   20.00 %     - Progress: [##########----------------------------------------]   21.54 %     \ Progress: [###########---------------------------------------]   23.08 %     | Progress: [############--------------------------------------]   24.62 %     / Progress: [#############-------------------------------------]   26.15 %     - Progress: [#############-------------------------------------]   27.69 %     \ Progress: [##############------------------------------------]   29.23 %     | Progress: [###############-----------------------------------]   30.77 %     / Progress: [################----------------------------------]   32.31 %     - Progress: [################----------------------------------]   33.85 %     \ Progress: [#################---------------------------------]   35.38 %     | Progress: [##################--------------------------------]   36.92 %     / Progress: [###################-------------------------------]   38.46 %     - Progress: [####################------------------------------]   40.00 %     \ Progress: [####################------------------------------]   41.54 %     | Progress: [#####################-----------------------------]   43.08 %     / Progress: [######################----------------------------]   44.62 %     - Progress: [#######################---------------------------]   46.15 %     \ Progress: [#######################---------------------------]   47.69 %     | Progress: [########################--------------------------]   49.23 %     / Progress: [#########################-------------------------]   50.77 %     - Progress: [##########################------------------------]   52.31 %     \ Progress: [##########################------------------------]   53.85 %     | Progress: [###########################-----------------------]   55.38 %     / Progress: [############################----------------------]   56.92 %     - Progress: [#############################---------------------]   58.46 %     \ Progress: [##############################--------------------]   60.00 %     | Progress: [##############################--------------------]   61.54 %     / Progress: [###############################-------------------]   63.08 %     - Progress: [################################------------------]   64.62 %     \ Progress: [#################################-----------------]   66.15 %     | Progress: [#################################-----------------]   67.69 %     / Progress: [##################################----------------]   69.23 %     - Progress: [###################################---------------]   70.77 %     \ Progress: [####################################--------------]   72.31 %     | Progress: [####################################--------------]   73.85 %     / Progress: [#####################################-------------]   75.38 %     - Progress: [######################################------------]   76.92 %     \ Progress: [#######################################-----------]   78.46 %     | Progress: [########################################----------]   80.00 %     / Progress: [########################################----------]   81.54 %     - Progress: [#########################################---------]   83.08 %     \ Progress: [##########################################--------]   84.62 %     | Progress: [###########################################-------]   86.15 %     / Progress: [###########################################-------]   87.69 %     - Progress: [############################################------]   89.23 %     \ Progress: [#############################################-----]   90.77 %     | Progress: [##############################################----]   92.31 %     / Progress: [##############################################----]   93.85 %     - Progress: [###############################################---]   95.38 %     \ Progress: [################################################--]   96.92 %     | Progress: [#################################################-]   98.46 %     / Progress: [##################################################]  100.00 %     - 
+ Calculation took up wall clock time        25 s
+
+ Integral of hole:        1.000038
+ Integral of electron:    1.000053
+ Integral of transition density:   -0.000005
+ Transition dipole moment in X/Y/Z:   0.009241   0.057289   0.000654 a.u.
+ Transition magnetic dipole moment in X/Y/Z:  0.015242  0.009559 -0.028627 a.u.
+ Sm index (integral of Sm function):   0.85200 a.u.
+ Sr index (integral of Sr function):   0.97785 a.u.
+ Centroid of hole in X/Y/Z:        1.514850    0.013127    0.012052 Angstrom
+ Centroid of electron in X/Y/Z:    1.535305    0.022958    0.006901 Angstrom
+ D_x:   0.020  D_y:   0.010  D_z:   0.005    D index:   0.023 Angstrom
+ Variation of dipole moment with respect to ground state:
+ X:   -0.038656  Y:   -0.018578  Z:    0.009735    Norm:    0.043979 a.u.
+ RMSD of hole in X/Y/Z:       1.169   1.076   0.674   Norm:   1.726 Angstrom
+ RMSD of electron in X/Y/Z:   1.208   1.080   0.622   Norm:   1.735 Angstrom
+ Difference between RMSD of hole and electron (delta sigma):
+ X:  0.039  Y:  0.003  Z: -0.052    Overall:  0.009 Angstrom
+ H_x:  1.188  H_y:  1.078  H_z:  0.648  H_CT:  1.149  H index:  1.731 Angstrom
+ t index: -1.125 Angstrom
+ Hole delocalization index (HDI):       9.25
+ Electron delocalization index (EDI):  10.90
+ Ghost-hunter index (def 1):   -615.154 eV, 1st/2nd terms:  3.603    618.757 eV
+ Ghost-hunter index (def 2):   -615.234 eV, 1st/2nd terms:  3.524    618.757 eV
+ Excitation energy of this state:     6.329 eV
+ 
+              -------------- Post-processing menu --------------
+ -1 Toggle if adding state index at end of exported cube filename, current: No
+ 0 Return
+ 1 Show isosurface of hole distribution
+ 2 Show isosurface of electron distribution
+ 3 Show isosurface of hole and electron distribution simultaneously
+ 4 Show isosurface of overlap of hole-electron (i.e. Sm or Sr function)
+ 5 Show isosurface of transition density
+ 6 Show isosurface of transition dipole moment density
+ 7 Show isosurface of charge density difference
+ 8 Show isosurface of Cele and Chole functions simultaneously
+ 9 Show isosurface of transition magnetic dipole moment density
+ 10 Output cube file of hole distribution to current folder
+ 11 Output cube file of electron distribution to current folder
+ 12 Output cube file of overlap of hole-electron to current folder
+ 13 Output cube file of transition density to current folder
+ 14 Output cube file of transition dipole moment density to current folder
+ 15 Output cube file of charge density difference to current folder
+ 16 Output cube file of Cele and Chole functions to current folder
+ 17 Output cube file of transition magnetic dipole moment density
+ 18 Calculate hole-electron Coulomb attractive energy (exciton binding energy)
+ Select the component of transition magnetic dipole moment density
+ 1: X component  2: Y component  3: Z component
+ Outputting to magtrdipdens.cub in current folder
+ Done!
+ 
+              -------------- Post-processing menu --------------
+ -1 Toggle if adding state index at end of exported cube filename, current: No
+ 0 Return
+ 1 Show isosurface of hole distribution
+ 2 Show isosurface of electron distribution
+ 3 Show isosurface of hole and electron distribution simultaneously
+ 4 Show isosurface of overlap of hole-electron (i.e. Sm or Sr function)
+ 5 Show isosurface of transition density
+ 6 Show isosurface of transition dipole moment density
+ 7 Show isosurface of charge density difference
+ 8 Show isosurface of Cele and Chole functions simultaneously
+ 9 Show isosurface of transition magnetic dipole moment density
+ 10 Output cube file of hole distribution to current folder
+ 11 Output cube file of electron distribution to current folder
+ 12 Output cube file of overlap of hole-electron to current folder
+ 13 Output cube file of transition density to current folder
+ 14 Output cube file of transition dipole moment density to current folder
+ 15 Output cube file of charge density difference to current folder
+ 16 Output cube file of Cele and Chole functions to current folder
+ 17 Output cube file of transition magnetic dipole moment density
+ 18 Calculate hole-electron Coulomb attractive energy (exciton binding energy)
+ 
+    ------------- Hole-electron and transition density analysis -----------
+ -1 Toggle calculating transit. magnetic dip. density in option 1, current: Yes
+ 0 Return
+ 1 Visualize and analyze hole, electron, transition density and so on
+ 2 Show molecular orbital contribution to hole and electron distribution
+ 3 Show atom or fragment contribution to hole and electron and plot the contributions as heat map
+ 4 Show basis function contribution to hole and electron
+ 
+           ============ Electronic excitation analyses ============ 
+ -1 Check, modify and export configuration coefficients of an excitation
+ 0 Return
+ 1 Analyze and visualize hole-electron distribution, transition density, and transition electric/magnetic dipole moment density
+ 2 Plot atom/fragment transition matrix of various kinds as heat map
+ 3 Analyze charge-transfer based on density difference grid data (JCTC,7,2498)
+ 4 Calculate delta_r index to measure charge-transfer length (JCTC,9,3118)
+ 5 Calculate transition electric dipole moments between all states and electric dipole moment of each state
+ 6 Generate natural transition orbitals (NTOs)
+ 7 Calculate ghost-hunter index (JCC,38,2151)
+ 8 Calculate interfragment charge transfer amount via IFCT method
+ 9 Generate and export transition density matrix
+ 10 Decompose transition dipole moment as molecular orbital pair contributions
+ 11 Decompose transition dipole moment as basis function and atom contributions
+ 12 Calculate Mulliken atomic transition charges
+ 13 Generate natural orbitals of specific excited states
+ 14 Calculate lambda index to characterize electron excitation (JCP,128,044118)
+ 15 Print major MO transitions in all excited states
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point
+ 2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and atomic charges
+ 8 Orbital composition analysis
+ 9 Bond order analysis
+ 10 Plot total DOS, partial DOS, OPDOS, local DOS and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                    18 Electron excitation analysis
+ 19 Orbital localization analysis     20 Visual study of weak interaction
+ 21 Energy decomposition analysis
+ 100 Other functions (Part 1)         200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ Nucleus list:
+    1(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.371937  -2.222740  -0.005385
+    2(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008407  -2.222740  -0.005385
+    3(C ) --> Charge:  6.000000  x,y,z(Bohr):   5.326563   0.059578  -0.005385
+    4(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008188   2.343329  -0.007651
+    5(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.372351   2.343182  -0.008556
+    6(C ) --> Charge:  6.000000  x,y,z(Bohr):   0.054076   0.060003  -0.006674
+    7(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.333043  -4.022359  -0.004535
+    8(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.046827  -4.022729  -0.002900
+    9(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.047915   4.142619  -0.007762
+   10(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.332771   4.142732  -0.010357
+   11(H ) --> Charge:  1.000000  x,y,z(Bohr):  -2.023875   0.060349  -0.007014
+   12(C ) --> Charge:  6.000000  x,y,z(Bohr):   8.236741   0.059790  -0.003707
+   13(H ) --> Charge:  1.000000  x,y,z(Bohr):   8.911839   0.083252  -1.909541
+   14(F ) --> Charge:  9.000000  x,y,z(Bohr):   9.086258   2.127914   1.224890
+   15(Cl) --> Charge: 17.000000  x,y,z(Bohr):   9.344695  -2.674781   1.531314
+ Note: Orbital    37 is HOMO, energy:   -0.204241 a.u.   -5.557678 eV
+       Orbital    38 is LUMO, energy:    0.072714 a.u.    1.978652 eV
+       HOMO-LUMO gap:    0.276955 a.u.    7.536330 eV    727.145480 kJ/mol
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point
+ 2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and atomic charges
+ 8 Orbital composition analysis
+ 9 Bond order analysis
+ 10 Plot total DOS, partial DOS, OPDOS, local DOS and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                    18 Electron excitation analysis
+ 19 Orbital localization analysis     20 Visual study of weak interaction
+ 21 Energy decomposition analysis
+ 100 Other functions (Part 1)         200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ Nucleus list:
+    1(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.371937  -2.222740  -0.005385
+    2(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008407  -2.222740  -0.005385
+    3(C ) --> Charge:  6.000000  x,y,z(Bohr):   5.326563   0.059578  -0.005385
+    4(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008188   2.343329  -0.007651
+    5(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.372351   2.343182  -0.008556
+    6(C ) --> Charge:  6.000000  x,y,z(Bohr):   0.054076   0.060003  -0.006674
+    7(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.333043  -4.022359  -0.004535
+    8(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.046827  -4.022729  -0.002900
+    9(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.047915   4.142619  -0.007762
+   10(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.332771   4.142732  -0.010357
+   11(H ) --> Charge:  1.000000  x,y,z(Bohr):  -2.023875   0.060349  -0.007014
+   12(C ) --> Charge:  6.000000  x,y,z(Bohr):   8.236741   0.059790  -0.003707
+   13(H ) --> Charge:  1.000000  x,y,z(Bohr):   8.911839   0.083252  -1.909541
+   14(F ) --> Charge:  9.000000  x,y,z(Bohr):   9.086258   2.127914   1.224890
+   15(Cl) --> Charge: 17.000000  x,y,z(Bohr):   9.344695  -2.674781   1.531314
+ Note: Orbital    37 is HOMO, energy:   -0.204241 a.u.   -5.557678 eV
+       Orbital    38 is LUMO, energy:    0.072714 a.u.    1.978652 eV
+       HOMO-LUMO gap:    0.276955 a.u.    7.536330 eV    727.145480 kJ/mol
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point
+ 2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and atomic charges
+ 8 Orbital composition analysis
+ 9 Bond order analysis
+ 10 Plot total DOS, partial DOS, OPDOS, local DOS and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                    18 Electron excitation analysis
+ 19 Orbital localization analysis     20 Visual study of weak interaction
+ 21 Energy decomposition analysis
+ 100 Other functions (Part 1)         200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ Nucleus list:
+    1(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.371937  -2.222740  -0.005385
+    2(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008407  -2.222740  -0.005385
+    3(C ) --> Charge:  6.000000  x,y,z(Bohr):   5.326563   0.059578  -0.005385
+    4(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008188   2.343329  -0.007651
+    5(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.372351   2.343182  -0.008556
+    6(C ) --> Charge:  6.000000  x,y,z(Bohr):   0.054076   0.060003  -0.006674
+    7(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.333043  -4.022359  -0.004535
+    8(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.046827  -4.022729  -0.002900
+    9(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.047915   4.142619  -0.007762
+   10(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.332771   4.142732  -0.010357
+   11(H ) --> Charge:  1.000000  x,y,z(Bohr):  -2.023875   0.060349  -0.007014
+   12(C ) --> Charge:  6.000000  x,y,z(Bohr):   8.236741   0.059790  -0.003707
+   13(H ) --> Charge:  1.000000  x,y,z(Bohr):   8.911839   0.083252  -1.909541
+   14(F ) --> Charge:  9.000000  x,y,z(Bohr):   9.086258   2.127914   1.224890
+   15(Cl) --> Charge: 17.000000  x,y,z(Bohr):   9.344695  -2.674781   1.531314
+ Note: Orbital    37 is HOMO, energy:   -0.204241 a.u.   -5.557678 eV
+       Orbital    38 is LUMO, energy:    0.072714 a.u.    1.978652 eV
+       HOMO-LUMO gap:    0.276955 a.u.    7.536330 eV    727.145480 kJ/mol
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point
+ 2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and atomic charges
+ 8 Orbital composition analysis
+ 9 Bond order analysis
+ 10 Plot total DOS, partial DOS, OPDOS, local DOS and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                    18 Electron excitation analysis
+ 19 Orbital localization analysis     20 Visual study of weak interaction
+ 21 Energy decomposition analysis
+ 100 Other functions (Part 1)         200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ Nucleus list:
+    1(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.371937  -2.222740  -0.005385
+    2(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008407  -2.222740  -0.005385
+    3(C ) --> Charge:  6.000000  x,y,z(Bohr):   5.326563   0.059578  -0.005385
+    4(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008188   2.343329  -0.007651
+    5(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.372351   2.343182  -0.008556
+    6(C ) --> Charge:  6.000000  x,y,z(Bohr):   0.054076   0.060003  -0.006674
+    7(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.333043  -4.022359  -0.004535
+    8(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.046827  -4.022729  -0.002900
+    9(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.047915   4.142619  -0.007762
+   10(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.332771   4.142732  -0.010357
+   11(H ) --> Charge:  1.000000  x,y,z(Bohr):  -2.023875   0.060349  -0.007014
+   12(C ) --> Charge:  6.000000  x,y,z(Bohr):   8.236741   0.059790  -0.003707
+   13(H ) --> Charge:  1.000000  x,y,z(Bohr):   8.911839   0.083252  -1.909541
+   14(F ) --> Charge:  9.000000  x,y,z(Bohr):   9.086258   2.127914   1.224890
+   15(Cl) --> Charge: 17.000000  x,y,z(Bohr):   9.344695  -2.674781   1.531314
+ Note: Orbital    37 is HOMO, energy:   -0.204241 a.u.   -5.557678 eV
+       Orbital    38 is LUMO, energy:    0.072714 a.u.    1.978652 eV
+       HOMO-LUMO gap:    0.276955 a.u.    7.536330 eV    727.145480 kJ/mol
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point
+ 2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and atomic charges
+ 8 Orbital composition analysis
+ 9 Bond order analysis
+ 10 Plot total DOS, partial DOS, OPDOS, local DOS and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                    18 Electron excitation analysis
+ 19 Orbital localization analysis     20 Visual study of weak interaction
+ 21 Energy decomposition analysis
+ 100 Other functions (Part 1)         200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ Warning: "settings.ini" was found neither in current folder nor in the path defined by "Multiwfnpath" environment variable. Now using default settings instead
+ 
+ Multiwfn -- A Multifunctional Wavefunction Analyzer
+ Version 3.7, release date: 2020-Aug-14
+ Project leader: Tian Lu (Beijing Kein Research Center for Natural Sciences)
+ Below paper ***MUST BE CITED*** if Multiwfn is utilized in your work:
+          Tian Lu, Feiwu Chen, J. Comput. Chem., 33, 580-592 (2012)
+ See "How to cite Multiwfn.pdf" in Multiwfn binary package for more information
+ Multiwfn official website: http://sobereva.com/multiwfn
+ Multiwfn English forum: http://sobereva.com/wfnbbs
+ Multiwfn Chinese forum: http://bbs.keinsci.com/wfn
+
+ ( The number of threads:   4   Current date: 2024-12-07   Time: 16:58:04 )
+
+ Warning: You should set "KMP_STACKSIZE" environment variable as mentioned in Section 2.1.2 of Multiwfn manual!
+ 
+ Input file path, for example E:\Haiyore!Nyaruko-san\Nyaruko.wfn
+ (Supported: .mwfn/wfn/wfx/fch/molden/31/chg/pdb/xyz/mol/mol2/cub/grd, etc.)
+ Hint: Press ENTER button directly can select file in a GUI window. To reload the file last time used, simply input the letter "o". Input such as ?miku.fch can open the miku.fch in the same folder as the file last time used.
+ Please wait...
+ Loading various information of the wavefunction
+ The highest angular moment basis functions is P
+ Loading basis set definition...
+ Loading orbitals...
+ Converting basis function information to GTF information...
+ Generating density matrix based on SCF orbitals...
+ Generating overlap matrix...
+ 
+ Total/Alpha/Beta electrons:     74.0000     37.0000     37.0000
+ Net charge:     0.00000      Expected multiplicity:    1
+ Atoms:     15,  Basis functions:     55,  GTFs:    165
+ Total energy:    -820.370369356610 Hartree,   Virial ratio:  2.01833469
+ This is a restricted single-determinant wavefunction
+ Orbitals from 1 to    37 are occupied
+ Title line of this file: TitleMe
+
+ Loaded geometry.fchk successfully!
+ Formula: H6 C7 F1 Cl1 
+ Molecule weight:       144.57414
+ Point group: C1 
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point
+ 2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and atomic charges
+ 8 Orbital composition analysis
+ 9 Bond order analysis
+ 10 Plot total DOS, partial DOS, OPDOS, local DOS and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                    18 Electron excitation analysis
+ 19 Orbital localization analysis     20 Visual study of weak interaction
+ 21 Energy decomposition analysis
+ 100 Other functions (Part 1)         200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ 
+           ============ Electronic excitation analyses ============ 
+ -1 Check, modify and export configuration coefficients of an excitation
+ 0 Return
+ 1 Analyze and visualize hole-electron distribution, transition density, and transition electric/magnetic dipole moment density
+ 2 Plot atom/fragment transition matrix of various kinds as heat map
+ 3 Analyze charge-transfer based on density difference grid data (JCTC,7,2498)
+ 4 Calculate delta_r index to measure charge-transfer length (JCTC,9,3118)
+ 5 Calculate transition electric dipole moments between all states and electric dipole moment of each state
+ 6 Generate natural transition orbitals (NTOs)
+ 7 Calculate ghost-hunter index (JCC,38,2151)
+ 8 Calculate interfragment charge transfer amount via IFCT method
+ 9 Generate and export transition density matrix
+ 10 Decompose transition dipole moment as molecular orbital pair contributions
+ 11 Decompose transition dipole moment as basis function and atom contributions
+ 12 Calculate Mulliken atomic transition charges
+ 13 Generate natural orbitals of specific excited states
+ 14 Calculate lambda index to characterize electron excitation (JCP,128,044118)
+ 15 Print major MO transitions in all excited states
+ Please input path of Gaussian/ORCA output file or plain text file, electron excitation information will be loaded from this file
+ e.g. C:\lovelive\sunshine\yosoro.out
+ Hint: If pressing ENTER button directly, the file with identical name as input file but with .out or .log suffix will be loaded
+ This file is recognized as a Gaussian output file
+ 
+ Information of the only excited state:
+ Excitation Energy:   6.329 eV   Multiplicity: 1    MO pairs:     813
+ 
+ The only excited state will be studied
+ Loading configuration coefficients of excited state   1...
+ The sum of square of excitation coefficients:  0.500290
+ The negative of the sum of square of de-excitation coefficients: -0.000289
+ The sum of above two values  0.500000
+ Deviation to expected normalization value (0.5) is  0.0000
+ 
+ Please cite hole-electron analysis:
+ Carbon, 165, 461-467 (2020) DOI: 10.1016/j.carbon.2020.05.023
+ 
+    ------------- Hole-electron and transition density analysis -----------
+ -1 Toggle calculating transit. magnetic dip. density in option 1, current: No
+ 0 Return
+ 1 Visualize and analyze hole, electron, transition density and so on
+ 2 Show molecular orbital contribution to hole and electron distribution
+ 3 Show atom or fragment contribution to hole and electron and plot the contributions as heat map
+ 4 Show basis function contribution to hole and electron
+ 
+    ------------- Hole-electron and transition density analysis -----------
+ -1 Toggle calculating transit. magnetic dip. density in option 1, current: Yes
+ 0 Return
+ 1 Visualize and analyze hole, electron, transition density and so on
+ 2 Show molecular orbital contribution to hole and electron distribution
+ 3 Show atom or fragment contribution to hole and electron and plot the contributions as heat map
+ 4 Show basis function contribution to hole and electron
+ 
+ Please select a method to set up grid
+ -10 Set extension distance of grid range for mode 1~4, current:  6.000 Bohr
+ 1 Low quality grid   , covering whole system, about 125000 points in total
+ 2 Medium quality grid, covering whole system, about 512000 points in total
+ 3 High quality grid  , covering whole system, about 1728000 points in total
+ 4 Input the number of points or grid spacing in X,Y,Z, covering whole system
+ 5 Input original point, translation vector and the number of points
+ 6 Input center coordinate, number of points and extension distance
+ 7 The same as 6, but input two atoms, the midpoint will be defined as center
+ 8 Use grid setting of another cube file
+ 10 Set box of grid data visually using a GUI window
+ Coordinate of origin in X,Y,Z is      -8.023875  -10.022729   -7.909541 Bohr
+ Coordinate of end point in X,Y,Z is   15.229454   10.081711    7.592678 Bohr
+ Grid spacing in X,Y,Z is    0.242222    0.242222    0.242222 Bohr
+ The number of points in X,Y,Z is   97   84   65   Total:      529620
+ Note: During the calculation of cross term of electron, the orbital pairs whose absolute value of coefficient <0.01 will be ignored to save time
+ Calculating grid data...
+ Progress: [--------------------------------------------------]    1.54 %     - Progress: [#-------------------------------------------------]    3.08 %     \ Progress: [##------------------------------------------------]    4.62 %     | Progress: [###-----------------------------------------------]    6.15 %     / Progress: [###-----------------------------------------------]    7.69 %     - Progress: [####----------------------------------------------]    9.23 %     \ Progress: [#####---------------------------------------------]   10.77 %     | Progress: [######--------------------------------------------]   12.31 %     / Progress: [######--------------------------------------------]   13.85 %     - Progress: [#######-------------------------------------------]   15.38 %     \ Progress: [########------------------------------------------]   16.92 %     | Progress: [#########-----------------------------------------]   18.46 %     / Progress: [##########----------------------------------------]   20.00 %     - Progress: [##########----------------------------------------]   21.54 %     \ Progress: [###########---------------------------------------]   23.08 %     | Progress: [############--------------------------------------]   24.62 %     / Progress: [#############-------------------------------------]   26.15 %     - Progress: [#############-------------------------------------]   27.69 %     \ Progress: [##############------------------------------------]   29.23 %     | Progress: [###############-----------------------------------]   30.77 %     / Progress: [################----------------------------------]   32.31 %     - Progress: [################----------------------------------]   33.85 %     \ Progress: [#################---------------------------------]   35.38 %     | Progress: [##################--------------------------------]   36.92 %     / Progress: [###################-------------------------------]   38.46 %     - Progress: [####################------------------------------]   40.00 %     \ Progress: [####################------------------------------]   41.54 %     | Progress: [#####################-----------------------------]   43.08 %     / Progress: [######################----------------------------]   44.62 %     - Progress: [#######################---------------------------]   46.15 %     \ Progress: [#######################---------------------------]   47.69 %     | Progress: [########################--------------------------]   49.23 %     / Progress: [#########################-------------------------]   50.77 %     - Progress: [##########################------------------------]   52.31 %     \ Progress: [##########################------------------------]   53.85 %     | Progress: [###########################-----------------------]   55.38 %     / Progress: [############################----------------------]   56.92 %     - Progress: [#############################---------------------]   58.46 %     \ Progress: [##############################--------------------]   60.00 %     | Progress: [##############################--------------------]   61.54 %     / Progress: [###############################-------------------]   63.08 %     - Progress: [################################------------------]   64.62 %     \ Progress: [#################################-----------------]   66.15 %     | Progress: [#################################-----------------]   67.69 %     / Progress: [##################################----------------]   69.23 %     - Progress: [###################################---------------]   70.77 %     \ Progress: [####################################--------------]   72.31 %     | Progress: [####################################--------------]   73.85 %     / Progress: [#####################################-------------]   75.38 %     - Progress: [######################################------------]   76.92 %     \ Progress: [#######################################-----------]   78.46 %     | Progress: [########################################----------]   80.00 %     / Progress: [########################################----------]   81.54 %     - Progress: [#########################################---------]   83.08 %     \ Progress: [##########################################--------]   84.62 %     | Progress: [###########################################-------]   86.15 %     / Progress: [###########################################-------]   87.69 %     - Progress: [############################################------]   89.23 %     \ Progress: [#############################################-----]   90.77 %     | Progress: [##############################################----]   92.31 %     / Progress: [##############################################----]   93.85 %     - Progress: [###############################################---]   95.38 %     \ Progress: [################################################--]   96.92 %     | Progress: [#################################################-]   98.46 %     / Progress: [##################################################]  100.00 %     - 
+ Calculation took up wall clock time        25 s
+
+ Integral of hole:        1.000038
+ Integral of electron:    1.000053
+ Integral of transition density:   -0.000005
+ Transition dipole moment in X/Y/Z:   0.009241   0.057289   0.000654 a.u.
+ Transition magnetic dipole moment in X/Y/Z:  0.015242  0.009559 -0.028627 a.u.
+ Sm index (integral of Sm function):   0.85200 a.u.
+ Sr index (integral of Sr function):   0.97785 a.u.
+ Centroid of hole in X/Y/Z:        1.514850    0.013127    0.012052 Angstrom
+ Centroid of electron in X/Y/Z:    1.535305    0.022958    0.006901 Angstrom
+ D_x:   0.020  D_y:   0.010  D_z:   0.005    D index:   0.023 Angstrom
+ Variation of dipole moment with respect to ground state:
+ X:   -0.038656  Y:   -0.018578  Z:    0.009735    Norm:    0.043979 a.u.
+ RMSD of hole in X/Y/Z:       1.169   1.076   0.674   Norm:   1.726 Angstrom
+ RMSD of electron in X/Y/Z:   1.208   1.080   0.622   Norm:   1.735 Angstrom
+ Difference between RMSD of hole and electron (delta sigma):
+ X:  0.039  Y:  0.003  Z: -0.052    Overall:  0.009 Angstrom
+ H_x:  1.188  H_y:  1.078  H_z:  0.648  H_CT:  1.149  H index:  1.731 Angstrom
+ t index: -1.125 Angstrom
+ Hole delocalization index (HDI):       9.25
+ Electron delocalization index (EDI):  10.90
+ Ghost-hunter index (def 1):   -615.154 eV, 1st/2nd terms:  3.603    618.757 eV
+ Ghost-hunter index (def 2):   -615.234 eV, 1st/2nd terms:  3.524    618.757 eV
+ Excitation energy of this state:     6.329 eV
+ 
+              -------------- Post-processing menu --------------
+ -1 Toggle if adding state index at end of exported cube filename, current: No
+ 0 Return
+ 1 Show isosurface of hole distribution
+ 2 Show isosurface of electron distribution
+ 3 Show isosurface of hole and electron distribution simultaneously
+ 4 Show isosurface of overlap of hole-electron (i.e. Sm or Sr function)
+ 5 Show isosurface of transition density
+ 6 Show isosurface of transition dipole moment density
+ 7 Show isosurface of charge density difference
+ 8 Show isosurface of Cele and Chole functions simultaneously
+ 9 Show isosurface of transition magnetic dipole moment density
+ 10 Output cube file of hole distribution to current folder
+ 11 Output cube file of electron distribution to current folder
+ 12 Output cube file of overlap of hole-electron to current folder
+ 13 Output cube file of transition density to current folder
+ 14 Output cube file of transition dipole moment density to current folder
+ 15 Output cube file of charge density difference to current folder
+ 16 Output cube file of Cele and Chole functions to current folder
+ 17 Output cube file of transition magnetic dipole moment density
+ 18 Calculate hole-electron Coulomb attractive energy (exciton binding energy)
+ Select the component of transition magnetic dipole moment density
+ 1: X component  2: Y component  3: Z component
+ Outputting to magtrdipdens.cub in current folder
+ Done!
+ 
+              -------------- Post-processing menu --------------
+ -1 Toggle if adding state index at end of exported cube filename, current: No
+ 0 Return
+ 1 Show isosurface of hole distribution
+ 2 Show isosurface of electron distribution
+ 3 Show isosurface of hole and electron distribution simultaneously
+ 4 Show isosurface of overlap of hole-electron (i.e. Sm or Sr function)
+ 5 Show isosurface of transition density
+ 6 Show isosurface of transition dipole moment density
+ 7 Show isosurface of charge density difference
+ 8 Show isosurface of Cele and Chole functions simultaneously
+ 9 Show isosurface of transition magnetic dipole moment density
+ 10 Output cube file of hole distribution to current folder
+ 11 Output cube file of electron distribution to current folder
+ 12 Output cube file of overlap of hole-electron to current folder
+ 13 Output cube file of transition density to current folder
+ 14 Output cube file of transition dipole moment density to current folder
+ 15 Output cube file of charge density difference to current folder
+ 16 Output cube file of Cele and Chole functions to current folder
+ 17 Output cube file of transition magnetic dipole moment density
+ 18 Calculate hole-electron Coulomb attractive energy (exciton binding energy)
+ 
+    ------------- Hole-electron and transition density analysis -----------
+ -1 Toggle calculating transit. magnetic dip. density in option 1, current: Yes
+ 0 Return
+ 1 Visualize and analyze hole, electron, transition density and so on
+ 2 Show molecular orbital contribution to hole and electron distribution
+ 3 Show atom or fragment contribution to hole and electron and plot the contributions as heat map
+ 4 Show basis function contribution to hole and electron
+ 
+           ============ Electronic excitation analyses ============ 
+ -1 Check, modify and export configuration coefficients of an excitation
+ 0 Return
+ 1 Analyze and visualize hole-electron distribution, transition density, and transition electric/magnetic dipole moment density
+ 2 Plot atom/fragment transition matrix of various kinds as heat map
+ 3 Analyze charge-transfer based on density difference grid data (JCTC,7,2498)
+ 4 Calculate delta_r index to measure charge-transfer length (JCTC,9,3118)
+ 5 Calculate transition electric dipole moments between all states and electric dipole moment of each state
+ 6 Generate natural transition orbitals (NTOs)
+ 7 Calculate ghost-hunter index (JCC,38,2151)
+ 8 Calculate interfragment charge transfer amount via IFCT method
+ 9 Generate and export transition density matrix
+ 10 Decompose transition dipole moment as molecular orbital pair contributions
+ 11 Decompose transition dipole moment as basis function and atom contributions
+ 12 Calculate Mulliken atomic transition charges
+ 13 Generate natural orbitals of specific excited states
+ 14 Calculate lambda index to characterize electron excitation (JCP,128,044118)
+ 15 Print major MO transitions in all excited states
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point
+ 2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and atomic charges
+ 8 Orbital composition analysis
+ 9 Bond order analysis
+ 10 Plot total DOS, partial DOS, OPDOS, local DOS and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                    18 Electron excitation analysis
+ 19 Orbital localization analysis     20 Visual study of weak interaction
+ 21 Energy decomposition analysis
+ 100 Other functions (Part 1)         200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ Nucleus list:
+    1(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.371937  -2.222740  -0.005385
+    2(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008407  -2.222740  -0.005385
+    3(C ) --> Charge:  6.000000  x,y,z(Bohr):   5.326563   0.059578  -0.005385
+    4(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008188   2.343329  -0.007651
+    5(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.372351   2.343182  -0.008556
+    6(C ) --> Charge:  6.000000  x,y,z(Bohr):   0.054076   0.060003  -0.006674
+    7(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.333043  -4.022359  -0.004535
+    8(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.046827  -4.022729  -0.002900
+    9(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.047915   4.142619  -0.007762
+   10(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.332771   4.142732  -0.010357
+   11(H ) --> Charge:  1.000000  x,y,z(Bohr):  -2.023875   0.060349  -0.007014
+   12(C ) --> Charge:  6.000000  x,y,z(Bohr):   8.236741   0.059790  -0.003707
+   13(H ) --> Charge:  1.000000  x,y,z(Bohr):   8.911839   0.083252  -1.909541
+   14(F ) --> Charge:  9.000000  x,y,z(Bohr):   9.086258   2.127914   1.224890
+   15(Cl) --> Charge: 17.000000  x,y,z(Bohr):   9.344695  -2.674781   1.531314
+ Note: Orbital    37 is HOMO, energy:   -0.204241 a.u.   -5.557678 eV
+       Orbital    38 is LUMO, energy:    0.072714 a.u.    1.978652 eV
+       HOMO-LUMO gap:    0.276955 a.u.    7.536330 eV    727.145480 kJ/mol
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point
+ 2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and atomic charges
+ 8 Orbital composition analysis
+ 9 Bond order analysis
+ 10 Plot total DOS, partial DOS, OPDOS, local DOS and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                    18 Electron excitation analysis
+ 19 Orbital localization analysis     20 Visual study of weak interaction
+ 21 Energy decomposition analysis
+ 100 Other functions (Part 1)         200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ Nucleus list:
+    1(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.371937  -2.222740  -0.005385
+    2(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008407  -2.222740  -0.005385
+    3(C ) --> Charge:  6.000000  x,y,z(Bohr):   5.326563   0.059578  -0.005385
+    4(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008188   2.343329  -0.007651
+    5(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.372351   2.343182  -0.008556
+    6(C ) --> Charge:  6.000000  x,y,z(Bohr):   0.054076   0.060003  -0.006674
+    7(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.333043  -4.022359  -0.004535
+    8(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.046827  -4.022729  -0.002900
+    9(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.047915   4.142619  -0.007762
+   10(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.332771   4.142732  -0.010357
+   11(H ) --> Charge:  1.000000  x,y,z(Bohr):  -2.023875   0.060349  -0.007014
+   12(C ) --> Charge:  6.000000  x,y,z(Bohr):   8.236741   0.059790  -0.003707
+   13(H ) --> Charge:  1.000000  x,y,z(Bohr):   8.911839   0.083252  -1.909541
+   14(F ) --> Charge:  9.000000  x,y,z(Bohr):   9.086258   2.127914   1.224890
+   15(Cl) --> Charge: 17.000000  x,y,z(Bohr):   9.344695  -2.674781   1.531314
+ Note: Orbital    37 is HOMO, energy:   -0.204241 a.u.   -5.557678 eV
+       Orbital    38 is LUMO, energy:    0.072714 a.u.    1.978652 eV
+       HOMO-LUMO gap:    0.276955 a.u.    7.536330 eV    727.145480 kJ/mol
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point
+ 2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and atomic charges
+ 8 Orbital composition analysis
+ 9 Bond order analysis
+ 10 Plot total DOS, partial DOS, OPDOS, local DOS and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                    18 Electron excitation analysis
+ 19 Orbital localization analysis     20 Visual study of weak interaction
+ 21 Energy decomposition analysis
+ 100 Other functions (Part 1)         200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ Nucleus list:
+    1(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.371937  -2.222740  -0.005385
+    2(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008407  -2.222740  -0.005385
+    3(C ) --> Charge:  6.000000  x,y,z(Bohr):   5.326563   0.059578  -0.005385
+    4(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008188   2.343329  -0.007651
+    5(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.372351   2.343182  -0.008556
+    6(C ) --> Charge:  6.000000  x,y,z(Bohr):   0.054076   0.060003  -0.006674
+    7(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.333043  -4.022359  -0.004535
+    8(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.046827  -4.022729  -0.002900
+    9(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.047915   4.142619  -0.007762
+   10(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.332771   4.142732  -0.010357
+   11(H ) --> Charge:  1.000000  x,y,z(Bohr):  -2.023875   0.060349  -0.007014
+   12(C ) --> Charge:  6.000000  x,y,z(Bohr):   8.236741   0.059790  -0.003707
+   13(H ) --> Charge:  1.000000  x,y,z(Bohr):   8.911839   0.083252  -1.909541
+   14(F ) --> Charge:  9.000000  x,y,z(Bohr):   9.086258   2.127914   1.224890
+   15(Cl) --> Charge: 17.000000  x,y,z(Bohr):   9.344695  -2.674781   1.531314
+ Note: Orbital    37 is HOMO, energy:   -0.204241 a.u.   -5.557678 eV
+       Orbital    38 is LUMO, energy:    0.072714 a.u.    1.978652 eV
+       HOMO-LUMO gap:    0.276955 a.u.    7.536330 eV    727.145480 kJ/mol
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point
+ 2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and atomic charges
+ 8 Orbital composition analysis
+ 9 Bond order analysis
+ 10 Plot total DOS, partial DOS, OPDOS, local DOS and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                    18 Electron excitation analysis
+ 19 Orbital localization analysis     20 Visual study of weak interaction
+ 21 Energy decomposition analysis
+ 100 Other functions (Part 1)         200 Other functions (Part 2)
+ 300 Other functions (Part 3)
+ Nucleus list:
+    1(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.371937  -2.222740  -0.005385
+    2(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008407  -2.222740  -0.005385
+    3(C ) --> Charge:  6.000000  x,y,z(Bohr):   5.326563   0.059578  -0.005385
+    4(C ) --> Charge:  6.000000  x,y,z(Bohr):   4.008188   2.343329  -0.007651
+    5(C ) --> Charge:  6.000000  x,y,z(Bohr):   1.372351   2.343182  -0.008556
+    6(C ) --> Charge:  6.000000  x,y,z(Bohr):   0.054076   0.060003  -0.006674
+    7(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.333043  -4.022359  -0.004535
+    8(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.046827  -4.022729  -0.002900
+    9(H ) --> Charge:  1.000000  x,y,z(Bohr):   5.047915   4.142619  -0.007762
+   10(H ) --> Charge:  1.000000  x,y,z(Bohr):   0.332771   4.142732  -0.010357
+   11(H ) --> Charge:  1.000000  x,y,z(Bohr):  -2.023875   0.060349  -0.007014
+   12(C ) --> Charge:  6.000000  x,y,z(Bohr):   8.236741   0.059790  -0.003707
+   13(H ) --> Charge:  1.000000  x,y,z(Bohr):   8.911839   0.083252  -1.909541
+   14(F ) --> Charge:  9.000000  x,y,z(Bohr):   9.086258   2.127914   1.224890
+   15(Cl) --> Charge: 17.000000  x,y,z(Bohr):   9.344695  -2.674781   1.531314
+ Note: Orbital    37 is HOMO, energy:   -0.204241 a.u.   -5.557678 eV
+       Orbital    38 is LUMO, energy:    0.072714 a.u.    1.978652 eV
+       HOMO-LUMO gap:    0.276955 a.u.    7.536330 eV    727.145480 kJ/mol
+ 
+ "q": Exit program gracefully          "r": Load a new file
+                    ************ Main function menu ************
+ 0 Show molecular structure and view orbitals
+ 1 Output all properties at a point
+ 2 Topology analysis
+ 3 Output and plot specific property in a line
+ 4 Output and plot specific property in a plane
+ 5 Output and plot specific property within a spatial region (calc. grid data)
+ 6 Check & modify wavefunction
+ 7 Population analysis and atomic charges
+ 8 Orbital composition analysis
+ 9 Bond order analysis
+ 10 Plot total DOS, partial DOS, OPDOS, local DOS and photoelectron spectrum
+ 11 Plot IR/Raman/UV-Vis/ECD/VCD/ROA/NMR spectrum
+ 12 Quantitative analysis of molecular surface
+ 13 Process grid data (No grid data is presented currently)
+ 14 Adaptive natural density partitioning (AdNDP) analysis
+ 15 Fuzzy atomic space analysis
+ 16 Charge decomposition analysis (CDA) and plot orbital interaction diagram
+ 17 Basin analysis                    18 Electron excitation analysis
+ 19 Orbital localization analysis     20 Visual study of weak interaction
+ 21 Energy decomposition analysis
+ 100 Other functions (Part 1)         200 Other functions (Part 2)
+ 300 Other functions (Part 3)
